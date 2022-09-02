@@ -1,0 +1,63 @@
+sample.c:1:1: warning: character constant too long for its type
+    1 | 'CiscoPacketTracer_820_Ubuntu_64bit(2).deb'
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sample.c:1:1: error: expected identifier or ‘(’ before '\x2e646562'
+In file included from /usr/include/stdio.h:43,
+                 from sample.c:9:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:95:3: error: unknown type name ‘size_t’
+   95 |   size_t __pad5;
+      |   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:98:67: error: ‘size_t’ undeclared here (not in a function)
+   98 |   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+      |                                                                   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:1:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+  +++ |+#include <stddef.h>
+    1 | /* Copyright (C) 1991-2022 Free Software Foundation, Inc.
+In file included from sample.c:9:
+/usr/include/stdio.h:308:35: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  308 | extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+      |                                   ^~~~~~
+/usr/include/stdio.h:314:47: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  314 | extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW
+      |                                               ^~~~~~
+/usr/include/stdio.h:333:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  333 |                     int __modes, size_t __n) __THROW;
+      |                                  ^~~~~~
+/usr/include/stdio.h:339:24: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  339 |                        size_t __size) __THROW;
+      |                        ^~~~~~
+/usr/include/stdio.h:378:44: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  378 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                                            ^~~~~~
+/usr/include/stdio.h:382:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  382 | extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+      |                                             ^~~~~~
+In file included from sample.c:9:
+/usr/include/stdio.h:633:30: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  633 |                              size_t *__restrict __n, int __delimiter,
+      |                              ^~~~~~
+/usr/include/stdio.h:636:28: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  636 |                            size_t *__restrict __n, int __delimiter,
+      |                            ^~~~~~
+/usr/include/stdio.h:646:27: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  646 |                           size_t *__restrict __n,
+      |                           ^~~~~~
+/usr/include/stdio.h:675:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread’
+  675 | extern size_t fread (void *__restrict __ptr, size_t __size,
+      |               ^~~~~
+/usr/include/stdio.h:681:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite’
+  681 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~
+/usr/include/stdio.h:702:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread_unlocked’
+  702 | extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:704:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite_unlocked’
+  704 | extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~~
+sample.c: In function ‘main’:
+sample.c:11:32: error: expected ‘;’ before ‘}’ token
+   11 |         printf("Hello World\n")
+      |                                ^
+      |                                ;
+   12 |  }
+      |  ~                              
