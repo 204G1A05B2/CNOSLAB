@@ -1,4 +1,4 @@
-'CiscoPacketTracer_820_Ubuntu_64bit(2).deb'
+//'CiscoPacketTracer_820_Ubuntu_64bit(2).deb'
 /* Name Of the Candidate: L. Ashok
    Roll No: 204G1A0501
    Title of the Experiment: CPU Scheduling Using FCFS Algorithm
@@ -8,5 +8,7 @@
   // Source Code
     #include <stdio.h>
     int main(){
-	printf("Hello World\n")
+	int i;
+        scanf("%d",&i);
+	printf("Hello World\n");
  }
